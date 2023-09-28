@@ -1,9 +1,9 @@
 # Koibito
 Pretty banners for displaying github views count
 
-![Banner](http://localhost:9993/@qweme32/koibito?length=5)
+![Banner](https://koibito.qweme.dev/@qweme32/koibito?length=5)
 
-[![Clickhouse](https://img.shields.io/badge/Clickhouse-000?logo=clickhouse)](https://qweme1.t.me) [![Clickhouse](https://img.shields.io/badge/Fastify-111?logo=fastify)](https://qweme1.t.me) ![Test](https://img.shields.io/badge/Prettier-1A2C34?logo=Prettier&logoColor=F7BA3E)
+![Clickhouse](https://img.shields.io/badge/Clickhouse-000?logo=clickhouse) ![Fastify](https://img.shields.io/badge/Fastify-111?logo=fastify) ![Prettier](https://img.shields.io/badge/Prettier-1A2C34?logo=Prettier&logoColor=F7BA3E)
 
 
 ### Features
