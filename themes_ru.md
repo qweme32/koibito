@@ -12,6 +12,9 @@
 https://koibito.qweme.dev/@qweme32?theme=name_in_table
 ```
 
+
+[Назад в документацию](https://github.com/qweme32/koibito/tree/main#docs)
+
 ---
 
 ### Как добавить свою тему в репозиторий

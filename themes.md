@@ -12,6 +12,8 @@ Language - **English** / [Русский](/themes_ru.md)
 https://koibito.qweme.dev/@qweme32?theme=name_in_table
 ```
 
+[Back to docs](https://github.com/qweme32/koibito/tree/main#docs)
+
 ---
 
 ### How to add your theme in koibito
