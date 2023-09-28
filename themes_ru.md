@@ -15,7 +15,7 @@ https://koibito.qweme.dev/@qweme32?theme=name_in_table
 ---
 
 ### Как добавить свою тему в репозиторий
-1. [Форкнуть репзоитория ( клик )](https://github.com/qweme32/koibito/fork)
+1. [Форкнуть репзоиторий ( клик )](https://github.com/qweme32/koibito/fork)
 
 2. Склонить свой форк
     ```sh

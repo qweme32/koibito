@@ -39,5 +39,5 @@ Language - **English** / [Русский](/README_ru.md)
 - Banner for repository  
     in `README.md`
     ```md
-    ![Koibito](https://koibito.qweme.dev/@your-name/repo?params=here)
+    ![Koibito](https://koibito.qweme.dev/@your-name/your-repo?params=here)
     ```
