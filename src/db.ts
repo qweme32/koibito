@@ -4,11 +4,10 @@ import { config } from 'dotenv';
 config();
 const clickhouse = createClient( {
     host: process.env.HOST,
-    username: process.env.USER,
+    username: process.env.CHUSER,
     password: process.env.PASS,
     database: process.env.NAME,
 } );
-console.log(process.env);
 
 export async function getUserViews(
     user: string,
