@@ -8,7 +8,7 @@ const clickhouse = createClient( {
     password: process.env.PASS,
     database: process.env.NAME,
 } );
-console.log(process.env.PASS);
+console.log(process.env);
 
 export async function getUserViews(
     user: string,
