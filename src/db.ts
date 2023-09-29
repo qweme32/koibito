@@ -13,6 +13,10 @@ export async function getUserViews(
     user: string,
     inc: boolean = true,
 ): Promise< number > {
+    if (!/^[a-zA-Z1-9 ]+$/.test(user)) {
+        return 1337;
+    }
+
     let query = await clickhouse.query( {
         query: `SELECT * FROM koibito.users WHERE login='${ user }'`,
         format: 'JSONEachRow',
@@ -47,6 +51,10 @@ export async function getRepoViews(
     repo: string,
     inc: boolean = true,
 ): Promise< number > {
+    if (!/^[a-zA-Z1-9 ]+$/.test(user)) {
+        return 1337;
+    }
+    
     let query = await clickhouse.query( {
         query: `SELECT * FROM koibito.repos WHERE login='${ user }' AND repo='${ repo }'`,
         format: 'JSONEachRow',
