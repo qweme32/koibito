@@ -1,4 +1,4 @@
-import { getUserViews, getRepoViews, saveData } from './mongo';
+import { getUserViews, getRepoViews, saveData, usageCount } from './mongo';
 
 export interface UserCache {
     viewsToAdd: number;
@@ -16,6 +16,7 @@ export interface RepoCache {
 export class CacheSystem {
     private userCaches: Array< UserCache > = [];
     private repoCaches: Array< RepoCache > = [];
+    public usage: number = 0;
 
     constructor() {
         setInterval(
@@ -27,6 +28,13 @@ export class CacheSystem {
                 console.log( '[Cache] Saved.' );
             },
             30 * 60 * 1000,
+        );
+
+        setInterval(
+            async () => {
+                this.usage = await usageCount();
+            },
+            5 * 60 * 1000,
         );
     }
 

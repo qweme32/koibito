@@ -22,6 +22,13 @@ const repoModel = mongoose.model(
     } ),
 );
 
+export async function usageCount(): Promise< number > {
+    return (
+        ( await userModel.countDocuments().exec() ) +
+        ( await repoModel.countDocuments().exec() )
+    );
+}
+
 export async function getRepoViews( user: string, repo: string ) {
     let data = await repoModel.findOne( { user: user, repo: repo } ).exec();
 

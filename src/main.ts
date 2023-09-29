@@ -175,6 +175,12 @@ app.get(
     },
 );
 
+app.get( '/usages', ( request: FastifyRequest, reply: FastifyReply ) => {
+    reply
+        .header( 'Content-Type', 'application/json' )
+        .send( { value: cache.usage } );
+} );
+
 app.listen( { port: 9993 }, async () => {
     console.log( '[SERVER] Listening on 9993 port.' );
     await connect();
