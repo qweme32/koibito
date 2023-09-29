@@ -51,10 +51,10 @@ export async function getRepoViews(
     repo: string,
     inc: boolean = true,
 ): Promise< number > {
-    if (!/^[a-zA-Z1-9 ]+$/.test(user)) {
+    if (!/^[a-zA-Z1-9 ]+$/.test(user) || !/^[a-zA-Z1-9 ]+$/.test(repo)) {
         return 1337;
     }
-    
+
     let query = await clickhouse.query( {
         query: `SELECT * FROM koibito.repos WHERE login='${ user }' AND repo='${ repo }'`,
         format: 'JSONEachRow',
