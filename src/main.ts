@@ -142,6 +142,37 @@ app.get(
     },
 );
 
+app.get(
+    '/demo',
+    {
+        schema: {
+            querystring: {
+                type: 'object',
+                properties: {
+                    theme: {
+                        type: 'string',
+                        enum: themes.themeNames,
+                    },
+                },
+
+                required: [ 'theme' ],
+            },
+        },
+    },
+    async ( request: FastifyRequest, reply: FastifyReply ) => {
+        let query = request.query as Record< string, any >;
+
+        reply
+            .header( 'Content-Type', 'image/svg+xml' )
+            .header(
+                // For github
+                'Cache-Control',
+                'max-age=0, no-cache, no-store, must-revalidate',
+            )
+            .send( themes.get( query.theme ).render( 123456789, 10, 2 ) );
+    },
+);
+
 app.listen( { port: 9993 }, async () => {
     console.log( '[SERVER] Listening on 9993 port.' );
     await clickhouse();
