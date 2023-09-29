@@ -38,6 +38,7 @@
     "@clickhouse/client": "^0.2.2",
     "dotenv": "^16.3.1",
     "fastify": "^4.23.2",
-    "glob": "^10.3.9"
+    "glob": "^10.3.9",
+    "mongoose": "^7.5.3"
   }
 }

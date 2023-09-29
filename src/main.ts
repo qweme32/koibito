@@ -3,9 +3,11 @@
 
 import Fastify, { FastifyRequest, FastifyReply } from 'fastify';
 import { ThemeStorage } from './themes';
-import { init as clickhouse, getRepoViews, getUserViews } from './db';
+import { CacheSystem } from './cache';
+import { connect } from './mongo';
 
 const themes = new ThemeStorage();
+const cache = new CacheSystem();
 const app = Fastify();
 
 app.get(
@@ -47,7 +49,7 @@ app.get(
         let params = request.params as Record< string, any >;
         let query = request.query as Record< string, any >;
 
-        const views = await getUserViews(
+        const views = await cache.getUser(
             params.user,
             // Check github user-agent
             request.headers[ 'user-agent' ] &&
@@ -114,7 +116,7 @@ app.get(
         let params = request.params as Record< string, any >;
         let query = request.query as Record< string, any >;
 
-        const views = await getRepoViews(
+        const views = await cache.getRepo(
             params.user,
             params.repo,
             // Check github user-agent
@@ -175,5 +177,5 @@ app.get(
 
 app.listen( { port: 9993 }, async () => {
     console.log( '[SERVER] Listening on 9993 port.' );
-    await clickhouse();
+    await connect();
 } );
