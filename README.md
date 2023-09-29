@@ -12,8 +12,19 @@ Language - **English** / [Русский](/README_ru.md)
 - Repository views banner
 - Easy to install
 
+### Themes
+<details><summary>Theme list</summary>
+
+| Name | Author | Preview |
+|-----|-------|--------|
+| chainsaw-man | [@tremscreeper](https://t.me/tremscreeper) |![Chainsaw-Man](https://koibito.qweme.dev/demo?theme=chainsaw-man) |
+| rule34 | rule34 artist |![Chainsaw-Man](https://koibito.qweme.dev/demo?theme=rule34) |
+
+</details>
+
+Read more [here](/themes_ru.md)
+
 ### Docs
-- [Available themes](/themes.md)
 - Banner for profile  
     in `README.md`
     ```md

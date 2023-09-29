@@ -1,5 +1,6 @@
 # Koibito
-Красивые баннеры для отображения количества просмотров вашего профиля / репозитория
+Красивые баннеры для отображения количества просмотров вашего профиля / репозитория  
+
 ![Banner](https://koibito.qweme.dev/@qweme32/koibito?length=5)
 
 ![Clickhouse](https://img.shields.io/badge/Clickhouse-000?logo=clickhouse) ![Fastify](https://img.shields.io/badge/Fastify-111?logo=fastify) ![Prettier](https://img.shields.io/badge/Prettier-1A2C34?logo=Prettier&logoColor=F7BA3E)
@@ -11,8 +12,19 @@
 - Баннер для отображения количества просмотров репозитория
 - Легок в установке
 
+### Темы
+<details><summary>Список всех тем</summary>
+
+| Имя | Автор | Превью |
+|-----|-------|--------|
+| chainsaw-man | [@tremscreeper](https://t.me/tremscreeper) |![Chainsaw-Man](https://koibito.qweme.dev/demo?theme=chainsaw-man) |
+| rule34 | rule34 artist |![Chainsaw-Man](https://koibito.qweme.dev/demo?theme=rule34) |
+
+</details>
+
+Подробнее [здесь](/themes_ru.md)
+
 ### Документация
-- [Доступные темы](/themes_ru.md)
 - Баннер для профиля
     в `README.md`
     ```md

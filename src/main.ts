@@ -169,7 +169,7 @@ app.get(
                 'Cache-Control',
                 'max-age=0, no-cache, no-store, must-revalidate',
             )
-            .send( themes.get( query.theme ).render( 123456789, 10, 2 ) );
+            .send( themes.get( query.theme ).render( 123456789, 10, 1 ) );
     },
 );
 
