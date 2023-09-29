@@ -36,6 +36,13 @@ export class CacheSystem {
             },
             5 * 60 * 1000,
         );
+
+        process.on( 'SIGINT', async () => {
+            await saveData( this.userCaches, this.repoCaches );
+            console.log( '[Cache] Graceful saved.' );
+
+            process.exit( 0 );
+        } );
     }
 
     async getUser( user: string, update: boolean = true ): Promise< number > {
