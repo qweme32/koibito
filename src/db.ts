@@ -13,7 +13,7 @@ export async function getUserViews(
     user: string,
     inc: boolean = true,
 ): Promise< number > {
-    if ( ! /^[a-zA-Z1-9 -]+$/.test( user ) ) {
+    if ( ! /^[a-zA-Z0-9 -]+$/.test( user ) ) {
         return 1337;
     }
 
@@ -52,8 +52,8 @@ export async function getRepoViews(
     inc: boolean = true,
 ): Promise< number > {
     if (
-        ! /^[a-zA-Z1-9 -]+$/.test( user ) ||
-        ! /^[a-zA-Z1-9 -]+$/.test( repo )
+        ! /^[a-zA-Z0-9 -]+$/.test( user ) ||
+        ! /^[a-zA-Z0-9 -]+$/.test( repo )
     ) {
         return 1337;
     }
