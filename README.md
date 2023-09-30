@@ -24,7 +24,7 @@ Language - **English** / [Русский](/README_ru.md)
 
 </details>
 
-Read more [here](/themes_ru.md)
+Read more [here](/themes.md)
 
 ### Docs
 - Banner for profile  
