@@ -3,7 +3,9 @@
 
 ![Banner](https://koibito.qweme.dev/@qweme32/koibito?length=5)
 
-![Clickhouse](https://img.shields.io/badge/Clickhouse-000?logo=clickhouse) ![Fastify](https://img.shields.io/badge/Fastify-111?logo=fastify) ![Prettier](https://img.shields.io/badge/Prettier-1A2C34?logo=Prettier&logoColor=F7BA3E)
+![Mongo](https://img.shields.io/badge/MongoDB-4EA94B?logo=mongodb&logoColor=white) ![Fastify](https://img.shields.io/badge/Fastify-111?logo=fastify) ![Prettier](https://img.shields.io/badge/Prettier-1A2C34?logo=Prettier&logoColor=F7BA3E)  
+![GitHub Repo stars](https://img.shields.io/github/stars/qweme32/koibito?logo=github&logoColor=white&label=Stars%20%20&labelColor=100000&color=f5de47)
+![Used](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fkoibito.qweme.dev%2Fusages&query=%24.value&logo=github&logoColor=white&label=Used&labelColor=100000&color=white)
 
 Язык - [English](/README.md) / **Русский**
 
